@@ -1,0 +1,9 @@
+#modal-alert p, #modal-alert h2{
+  text-align: center;
+  width: 100%;
+}
+
+.icon-alert{
+  text-align: center;
+  margin-bottom: 20px;
+}

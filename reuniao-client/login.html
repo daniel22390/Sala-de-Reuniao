@@ -1,0 +1,75 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <!-- Required meta tags -->
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+    <link rel="stylesheet" href="./css/modal.css">
+    <link rel="stylesheet" href="./css/login.css">
+
+    <!-- Bootstrap CSS -->
+    <link rel="stylesheet" href="./css/bootstrap.min.css">
+
+    <title>Hello, world!</title>
+  </head>
+  <body>
+    <div class="container">
+      <div class="login">
+        <div id="formContent">
+          <!-- Tabs Titles -->
+      
+          <!-- Icon -->
+          <div class="fadeIn first">
+            <h1>Agendamento</h1>
+          </div>
+      
+          <div class="login-option open-login" id="entrar">
+            <form action="/login" method="post" id="loginUsuario">
+              <input type="text" id="login" class="fadeIn second" name="user" placeholder="Usuário">
+              <input type="text" id="password" class="fadeIn third" name="password" placeholder="Senha">
+              <input type="submit" class="fadeIn fourth" value="Entrar">
+            </form>
+        
+            <!-- Remind Passowrd -->
+            <div id="formFooter">
+              <a href="#" class="underlineHover view" data-option-id="cadastrar">Cadastrar</a>
+            </div>
+          </div>
+          <div class="login-option"  id="cadastrar">
+            <form action="/cadastraUsuario" method="post" id="cadastraUsuario">
+              <input type="text" id="login_user" class="fadeIn second" name="user[user]" placeholder="Usuário">
+              <input type="text" id="password_user" class="fadeIn third" name="user[password]" placeholder="Senha">
+              <input type="text" id="password_conf_user" class="fadeIn third" name="user[password_confirmation]" placeholder="Confirmação de Senha">
+              <input type="submit" class="fadeIn fourth" value="Cadastrar">
+            </form>
+        
+            <!-- Remind Passowrd -->
+            <div id="formFooter">
+              <a href="#" class="underlineHover view" data-option-id="entrar">Entrar</a>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+
+    <div id="modal-alert" class="modal fade" tabindex="-1" role="dialog">
+      <div class="modal-dialog" role="document">
+        <div class="modal-content">
+          <div class="modal-body">
+            <div class="icon-alert"></div>
+            <p></p>
+          </div>
+          <div class="modal-footer">
+            <button type="button" class="btn btn-secondary" data-dismiss="modal">Fechar</button>
+          </div>
+        </div>
+      </div>
+    </div>
+
+    <script type="text/javascript" src="./js/jquery-3.3.1.slim.min.js"></script>
+    <script type="text/javascript" src="./js/bootstrap.min.js"></script>
+    <script src="https://kit.fontawesome.com/af34704bd4.js"></script>
+    <script type="text/javascript" src="./js/modal.js"></script>
+    <script type="text/javascript" src="./js/login.js"></script>
+  </body>
+</html>
